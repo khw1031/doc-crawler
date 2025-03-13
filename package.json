@@ -10,9 +10,10 @@
   "scripts": {
     "build": "tsup src/index.ts",
     "start": "ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "prepack": "pnpm build"
+    "lint": "eslint . --ext .ts",
+    "prebuild": "pnpm run clean",
+    "prepare": "pnpm run build"
   },
   "files": [
     "dist",

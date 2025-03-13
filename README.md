@@ -153,37 +153,49 @@ cd doc-fetch
 2. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 3. Build the project:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ### Publishing
 
-To publish a new version to npm:
+This package is automatically published to npm through GitHub Actions when a new version tag is pushed.
+
+To publish a new version:
 
 1. Update the version:
 
 ```bash
-npm version patch  # for bug fixes
-npm version minor  # for new features
-npm version major  # for breaking changes
+pnpm version patch  # for bug fixes
+pnpm version minor  # for new features
+pnpm version major  # for breaking changes
 ```
 
-2. Publish to npm:
+2. Push the new tag to GitHub:
 
 ```bash
-npm publish
+git push --follow-tags
 ```
 
-This will automatically:
+The GitHub Actions workflow will automatically:
 
+- Install dependencies
 - Run tests and linting
 - Build the project
-- Create a git tag
-- Push to GitHub
 - Publish to npm
+
+#### Setup for Publishing
+
+Before you can publish:
+
+1. Create an NPM account if you don't have one
+2. Add your NPM token to your GitHub repository:
+   - Go to npm (https://www.npmjs.com)
+   - Generate an access token
+   - In your GitHub repository, go to Settings > Secrets and variables > Actions
+   - Add a new secret named `NPM_TOKEN` with your npm access token
