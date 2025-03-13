@@ -1,5 +1,8 @@
 # doc-fetch
 
+[![Publish Package](https://github.com/khw1031/doc-fetch/actions/workflows/publish.yml/badge.svg)](https://github.com/khw1031/doc-fetch/actions/workflows/publish.yml)
+[![npm version](https://badge.fury.io/js/doc-fetch.svg)](https://badge.fury.io/js/doc-fetch)
+
 A command-line tool that extracts readable content from web pages by simulating browser text selection behavior.
 
 ## Overview
