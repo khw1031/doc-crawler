@@ -50,10 +50,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/doc-fetch.git"
+    "url": "git+https://github.com/khw1031/doc-fetch.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/doc-fetch/issues"
+    "url": "https://github.com/khw1031/doc-fetch/issues"
   },
-  "homepage": "https://github.com/yourusername/doc-fetch#readme"
+  "homepage": "https://github.com/khw1031/doc-fetch#readme"
 }
