@@ -1,0 +1,58 @@
+{
+  "name": "doc-fetch",
+  "version": "0.0.1",
+  "description": "Extract readable content from web pages",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "doc-fetch": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "prepack": "pnpm build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "web",
+    "content",
+    "extraction",
+    "readability",
+    "cli",
+    "browser",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^12.0.0",
+    "node-fetch": "^2.7.0",
+    "playwright": "^1.51.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "tsup": "^8.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/doc-fetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/doc-fetch/issues"
+  },
+  "homepage": "https://github.com/yourusername/doc-fetch#readme"
+}
