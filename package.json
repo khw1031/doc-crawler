@@ -1,6 +1,6 @@
 {
   "name": "doc-fetch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extract readable content from web pages",
   "main": "dist/index.js",
   "type": "module",
